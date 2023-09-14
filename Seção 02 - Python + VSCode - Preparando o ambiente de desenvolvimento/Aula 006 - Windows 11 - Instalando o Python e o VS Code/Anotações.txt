@@ -1,0 +1,8 @@
+Instalar Python - Python.org (versão mais atual)
+Instalar VSCode
+Ativar o Get-ExecutionPolicy pelo PowerShell para poder criar ambientes virtuais -m venv
+  - Abrir o PowerShell como Administrador
+  - Set-ExecutionPolicy AllSigned -Force
+    - Pode ser usado o Unrestricted ao invés de AllSigned, mas tem uma ressalva
+      Embora ele fique como Unrestricted, ele fica totalmente livre, sem nenhum aviso ou pergunta, então é melhor usar o AllSigned
+      Caso queira voltar a restringir, é só rodar o mesmo comando porém com Restricted
