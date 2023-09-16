@@ -1,14 +1,14 @@
 nome = 'Felipe Texeira'
 altura = 1.75
 peso = 133
-imc = peso / (altura ** 2)
+imc = peso / (altura ** 2) # não precisaria do parentese por conta da precedencia, mas acho mais organizado e visualmente mais fácil de identificar como o calculo está sendo feito
 
-print('Felipe Texeira tem 1.75 de altura')
-print('pesa 133 quilos e seu IMC é:')
+print(nome, 'tem', altura, 'de altura')
+print('pesa', peso, 'quilos e seu IMC é:')
 print(imc)
 print()
 
-altura = 1.8
+altura = 1.80
 peso = 95
 imc = peso / (altura ** 2)
 print('Dados do professor para conferência da fórmula')
