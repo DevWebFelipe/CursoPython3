@@ -14,9 +14,8 @@ while condicao:
   if integer > 10:
     condicao = False
 
-condicao = True
-while condicao:
+while True:
   nome = input('Qual seu nome? ')  
   print(f'Seu nome é {nome}')
   if nome.lower() == 'sair':
-    condicao = False
+    break
