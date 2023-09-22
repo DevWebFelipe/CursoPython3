@@ -65,3 +65,4 @@ while True:
 print()
 print('Parabéns!')
 print(f'Você completou a frase secreta em {numero_tentativas} tentativas!')
+print(f'Frase secreta: {frase_secreta}')
