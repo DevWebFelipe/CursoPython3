@@ -11,7 +11,7 @@
 
 """ Minha solução """
 
-frase_secreta = 'Eu amo voce'
+frase_secreta = 'Programar para solucionar problemas'
 frase_secreta_minuscula = frase_secreta.lower() 
 frase_secreta_oculta = len(frase_secreta) * '*'
 letras_ja_digitadas = ''
