@@ -11,6 +11,8 @@
 
 """ Minha solução """
 
+import os
+
 frase_secreta = 'Programar para solucionar problemas'
 frase_secreta_minuscula = frase_secreta.lower() 
 frase_secreta_oculta = len(frase_secreta) * '*'
@@ -62,7 +64,7 @@ while True:
     else:
       print('Que pena, essa não é a frase secreta, continue tentando!')
 
-print()
+os.system('cls')
 print('Parabéns!')
 print(f'Você completou a frase secreta em {numero_tentativas} tentativas!')
 print(f'Frase secreta: {frase_secreta}')
