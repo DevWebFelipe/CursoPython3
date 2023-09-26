@@ -25,10 +25,11 @@
 
 """
 
-# Minha solução com aula pausada
 cpf = '746.824.890-70'
-multiplo_regressivo = 10
+
+# Minha solução com aula pausada
 soma = 0
+multiplo_regressivo = 10
 
 for digito in cpf:
   if digito.isdigit() and multiplo_regressivo >= 2:
@@ -41,4 +42,16 @@ resto = soma % 11
 primeiro_digito = resto if resto <= 9 else 0
 print(primeiro_digito)
 
+
 # Solução do professor
+nove_digitos = cpf.replace('.', '')[:9] # adicionei o replace que não tem na solução do professor pra reaproveitar a mesma variável do CPF que usei na minha solução
+resultado = 0
+contador_regressivo = 10
+
+for digito in nove_digitos:
+  resultado += (int(digito) * contador_regressivo)
+  contador_regressivo -= 1
+
+digito = (resultado *10 ) % 11
+primeiro_digito = digito if digito <= 9 else 0
+print(primeiro_digito)
